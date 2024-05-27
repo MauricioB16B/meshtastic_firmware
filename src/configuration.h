@@ -228,6 +228,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define HAS_BLUETOOTH 0
 #endif
 
+#undef HAS_SCREEN
+#define HAS_SCREEN 0
+
+#undef HAS_BUTTON
+#define HAS_BUTTON 0
+
+#undef HAS_GPS
+#define HAS_GPS 0
+
+#undef HAS_SENSOR
+#define HAS_SENSOR 0
+
+#undef HAS_TELEMETRY
+#define HAS_TELEMETRY 0
+
+#undef HAS_SCREEN
+#define HAS_SCREEN 0
+
+// #define ARCH_STM32WL 1
+
+// #define MESHTASTIC_EXCLUDE_GPS
+
+// #define USE_SEGGER
+
 #include "DebugConfiguration.h"
 #include "RF95Configuration.h"
 

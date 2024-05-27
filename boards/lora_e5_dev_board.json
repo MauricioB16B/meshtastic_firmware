@@ -1,19 +1,19 @@
 {
   "build": {
     "arduino": {
-      "variant_h": "variant_RAK3172_MODULE.h"
+      "variant_h": "variant_LORA_E5_MINI.h"
     },
     "core": "stm32",
     "cpu": "cortex-m4",
-    "extra_flags": "-DSTM32WLxx -DSTM32WLE5xx -DARDUINO_GENERIC_WLE5CCUX",
+    "extra_flags": "-DSTM32WLxx -DSTM32WLE5xx -DARDUINO_GENERIC_WLE5JCIX",
     "f_cpu": "48000000L",
-    "mcu": "stm32wle5ccu",
-    "variant": "STM32WLxx/WL54CCU_WL55CCU_WLE4C(8-B-C)U_WLE5C(8-B-C)U",
+    "mcu": "stm32wle5jci",
+    "variant": "STM32WLxx/WL54JCI_WL55JCI_WLE4J(8-B-C)I_WLE5J(8-B-C)I",
     "product_line": "STM32WLE5xx"
   },
   "debug": {
-    "default_tools": ["stlink"],
-    "jlink_device": "STM32WLE5CC",
+    "default_tools": ["jlink"],
+    "jlink_device": "STM32WLE5JC",
     "openocd_target": "stm32wlx",
     "svd_path": "STM32WLE5_CM4.svd"
   },
@@ -22,7 +22,7 @@
   "upload": {
     "maximum_ram_size": 65536,
     "maximum_size": 262144,
-    "protocol": "cmsis-dap",
+    "protocol": "jlink",
     "protocols": ["cmsis-dap", "stlink", "jlink"]
   },
   "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32wl-series.html",

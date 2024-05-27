@@ -23,3 +23,9 @@
 #define SX126X_DIO1 1001
 #define SX126X_RESET 1003
 #define SX126X_BUSY 1004
+
+/* #include "SEGGER_RTT.h"
+
+#define SEGGER_STDOUT_CH 0
+
+#define SEGGER_MSG(...) SEGGER_RTT_printf(SEGGER_STDOUT_CH, __VA_ARGS__) */
